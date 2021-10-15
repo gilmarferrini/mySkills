@@ -29,14 +29,16 @@ export function Home() {
             onChangeText={setNewSkill}
         />
 
-        <Button />
+        <Button 
+            onPress={handleAddNewSkill}
+        />
 
         <Text style={[styles.title, { marginVertical: 50 }]}>
             My Skills
         </Text>
         
         {
-            mySkills.map((skill, index) => <SkillCard key={index} />)
+            mySkills.map((skill, index) => <SkillCard key={index} skill={skill} />)
         }
 
         </View>
