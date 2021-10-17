@@ -59,6 +59,7 @@ export function Home() {
 
         <Button 
             onPress={handleAddNewSkill}
+            title="Add"
         />
 
         <Text style={[styles.title, { marginVertical: 50 }]}>
